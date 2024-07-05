@@ -62,9 +62,9 @@ def check_database(database_name):
     # Connect to the MySQL server
     try:
         connection = mysql.connector.connect(
-            host="",
-            user="",
-            password=""
+            host="localhost",
+            user="root",
+            password="123456"
         )
 
         cursor = connection.cursor()
@@ -227,10 +227,10 @@ def get_existing_match_ids():
     try:
         # Connect to the MySQL server
         connection = mysql.connector.connect(
-            host="",
-            user="",
-            password="",
-            database=""  # Update with your database name
+            host="localhost",
+            user="root",
+            password="123456",
+            database="cricket_data"  # Update with your database name
         )
 
         cursor = connection.cursor()
@@ -303,10 +303,10 @@ def insert_into_matches(match_id, pattern):
     try:
         # Connect to the MySQL server
         connection = mysql.connector.connect(
-            host="",
-            user="",
-            password="",
-            database=""  # Update with your database name
+            host="localhost",
+            user="root",
+            password="123456",
+            database="cricket_data"  # Update with your database name
         )
 
         cursor = connection.cursor()
@@ -350,10 +350,10 @@ def collect_meta(match_id):
 
                 # Connect to the MySQL server
                 connection = mysql.connector.connect(
-                    host="",
-                    user="",
-                    password="",
-                    database=""  # Update with your database name
+                    host="localhost",
+                    user="root",
+                    password="123456",
+                    database="cricket_data"  # Update with your database name
                 )
 
                 cursor = connection.cursor()
@@ -424,10 +424,10 @@ def collect_info(match_id):
 
                     # Connect to the MySQL database
                     connection = mysql.connector.connect(
-                        host="",
-                        user="",
-                        password="",
-                        database=""
+                        host="localhost",
+                        user="root",
+                        password="123456",
+                        database="cricket_data"
                     )
 
                     # Create a cursor to execute SQL queries
@@ -521,10 +521,10 @@ def collect_over_section(match_id):
 
                 # Establish connection to the MySQL database
                 cnx = mysql.connector.connect(
-                    host="",
-                    user="",
-                    password="",
-                    database=""
+                    host="localhost",
+                    user="root",
+                    password="123456",
+                    database="cricket_data"
                 )
 
                 cursor = cnx.cursor()
@@ -628,10 +628,10 @@ def collect_innings_info(match_id):
 
                 # Establish connection to the MySQL database
                 cnx = mysql.connector.connect(
-                    host="",
-                    user="",
-                    password="",
-                    database=""
+                    host="localhost",
+                    user="root",
+                    password="123456",
+                    database="cricket_data"
                 )
 
                 cursor = cnx.cursor()
